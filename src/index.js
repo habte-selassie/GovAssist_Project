@@ -1,10 +1,26 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import Navigation from "./Nav";
+import Body from "./Body";
+import Testimonial from "./Testimonial";
+import Footer from "./Footer";
+import LotteryForm from "./LotteryForm";
+import LotteryFormSteps from "./LotteryFormSteps";
+import App from "./App";
+import { Router } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const rootElement = document.getElementById("root");
+
+ReactDOM.createRoot(rootElement).render(
+  <>
+  
+     <Navigation />    
+      <Body /> 
+      <Testimonial />  
+      <Footer />   
+      <LotteryForm />   
+      <LotteryFormSteps />
+       
+  </>
 );
+
